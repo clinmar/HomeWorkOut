@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="css/jquery-1.11.1.min.js"></script>
+  <script src="css/jquery.mobile-1.4.5.min.js"></script>
+  <script src="css/modal.js"></script>
+
+
+</head>
+
+<style>
+    .timer {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 48px;
+     color: #030303 !important;
+     background-color: #90ee90;
+     border-radius: 10px;
+     padding: 20px 40px;
+     text-align: center;
+     width: 200px;
+     margin: 20px auto;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   }
+
+    .start-timer {
+      display: block;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px auto;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .start-timer:hover {
+      background-color: #0056b3;
+    }
+</style>
+<body>
+  <div data-role="page" id="page-main" class="page">
+    <div data-role="header" class="header">
+        <a href="index1.html" data-ajax="false"  data-icon="back" data-iconpos="notext">back</a>
+      </div>
+      <br><br>
+    <div data-role="content" class="ui-content">
+        <center>
+        <h1>Vascular </h1>
+        </center>
+
+
+      <div class="image-grid">
+        <!-- Image 1 -->
+        <div class="image-item">
+          <img src="images/vascular/1.png" alt="Image 1" width="100%">
+          <div class="image-text">Arm Circles</div>
+          <a href="#modal-step1" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 2 -->
+        <div class="image-item">
+          <img src="images/vascular/2.png" alt="Image 2" width="100%">
+          <div class="image-text">Leg Lifts</div>
+          <a href="#modal-step2" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 3 -->
+        <div class="image-item">
+          <img src="images/vascular/3.png" alt="Image 3" width="100%">
+          <div class="image-text">Ankle Flexes</div>
+          <a href="#modal-step3" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 4 -->
+        <div class="image-item">
+          <img src="images/vascular/4.png" alt="Image 4" width="100%">   
+          <div class="image-text">Toe Taps:</div>
+          <a href="#modal-step4" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/5.png" alt="Image 4" width="100%">   
+            <div class="image-text">Shoulder Rolls</div>
+            <a href="#modal-step5" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/6.png" alt="Image 4" width="100%">   
+            <div class="image-text">Calf Raises</div>
+            <a href="#modal-step6" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/7.png" alt="Image 4" width="100%">   
+            <div class="image-text">Wrist Flexes</div>
+            <a href="#modal-step7" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/8.png" alt="Image 4" width="100%">   
+            <div class="image-text">Knee Lifts</div>
+            <a href="#modal-step8" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/9.png" alt="Image 4" width="100%">   
+            <div class="image-text">Side Bends</div>
+            <a href="#modal-step9" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/10.png" alt="Image 4" width="100%">   
+            <div class="image-text">Hip Circles</div>
+            <a href="#modal-step10" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        
+
+
+
+      </div>
+    </div>
+
+    <!-- Modal for Step 1 -->
+    <div data-role="popup" id="modal-step1" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+          <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+
+          </div>
+          <br><br>
+      <div class="modal-content">
+        <h3> Arm Circles</h3>
+       <p>
+        Stand with your feet shoulder-width apart and extend your arms straight out to the sides. Rotate your arms in small circles, gradually increasing the size of the circles. Do this for 30 seconds .
+       </p>
+       <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 2 s-->
+    <div data-role="popup" id="modal-step2" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Leg Lifts</h3>
+        <p>
+            Sit on the edge of a chair with your feet flat on the ground. Lift one leg off the ground, extending it straight out in front of you. Hold for a few seconds, then lower it back down. Repeat with the other leg. Aim for 3osecond on each leg.
+           </p>
+           <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 3 -->
+    <div data-role="popup" id="modal-step3" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3> Ankle Flexes</h3>
+      <p>
+        Sit on a chair with your feet flat on the ground. Lift one foot off the ground and flex your ankle, pointing your toes up toward the ceiling. Hold for a few seconds, then relax. Repeat with the other foot. Do 10-15 repetitions on each foot.
+      </p>
+        <div class="timer">30</div>
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 4 -->
+    <div data-role="popup" id="modal-step4" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Toe Taps</h3>
+        <p>
+            Sit on a chair with your feet flat on the ground. Lift one foot off the ground and tap your toes on the floor in front of you. Repeat with the other foot. Aim for 10-15 taps on each foot.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+
+    <!-- 5 modal -->
+
+
+    <div data-role="popup" id="modal-step5" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Shoulder Rolls:</h3>
+        <p>
+            Stand tall with your arms relaxed at your sides. Roll your shoulders forward in a circular motion, then reverse the direction and roll them backward. Do this for 30 seconds to 1 minute.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div data-role="popup" id="modal-step6" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Calf Raises</h3>
+        <p>
+            Stand with your feet hip-width apart and raise up onto the balls of your feet, lifting your heels off the ground. Hold for a moment, then lower your heels back down. Aim for 10-15 repetitions.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div data-role="popup" id="modal-step7" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Wrist Flexes</h3>
+        <p>
+            Extend your arms out in front of you with your palms facing down. Flex your wrists upward, pointing your fingers toward the ceiling. Hold for a few seconds, then relax. Repeat 10-15 times.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+      <!-- 8 -->
+      <div data-role="popup" id="modal-step8" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Knee Lifts</h3>
+        <p>
+            Stand tall with your feet hip-width apart. Lift one knee up towards your chest, then lower it back down. Repeat on the other side. Aim for 10-15 lifts on each side.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <div data-role="popup" id="modal-step9" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Side Bends:</h3>
+        <p>
+            Stand with your feet shoulder-width apart and arms at your sides. Slowly lean to one side, sliding your hand down your leg towards your knee. Hold for a few seconds, then return to the starting position. Repeat on the other side. Aim for 10-15 bends on each side.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+
+
+    <div data-role="popup" id="modal-step10" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Hip Circles</h3>
+        <p>
+            Stand with your feet hip-width apart and hands on your hips. Circle your hips clockwise, then reverse the direction and circle them counterclockwise. Do this for 30 seconds .
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+    <a href="vascularweek/index.html" class="ui-btn week" data-ajax="false">4 week </a>
+
+
+
+
+
+    <div data-role="footer" data-position="fixed" class="footer">
+    </div>
+  </div>
+
+  <script>
+    $(document).on("click", ".view-step-btn", function() {
+      $(".ui-popup-active").popup("close");
+    });
+  
+    function startMainTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      var intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+  
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+        display.text(minutes + ":" + seconds);
+  
+        if (--timer < 0) {
+          clearInterval(intervalId);
+          Swal.fire({
+            title: 'Time\'s up!',
+            text: 'The time for this stretch is over.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            onClose: () => {
+              display.text("00:30");
+            }
+          });
+          var audio = new Audio('images/alarm.wav');
+          audio.play();
+        }
+      }, 1000);
+    }
+  
+    function startPreparationTimer(prepDuration, mainDuration, display) {
+      var timer = prepDuration, seconds;
+      var audio = new Audio('images/preparation_sound.wav');
+      audio.play();
+      display.text("Please prepare for exercise");
+  
+      var intervalId = setInterval(function () {
+        seconds = parseInt(timer % 60, 10);
+  
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+        display.text("00:" + seconds);
+  
+        if (--timer < 0) {
+          clearInterval(intervalId);
+          display.text("Exercise is starting");
+  
+          var startSound = new Audio('start.mp3'); 
+          startSound.play();
+  
+          setTimeout(function() {
+            startMainTimer(mainDuration, display);
+          }, 1000); 
+        }
+      }, 1000);
+    }
+  
+    $(document).on("click", ".start-timer", function() {
+      var prepDuration = 10,
+          mainDuration = 30, 
+          display = $(this).prev('.timer');
+  
+      var prepSound = new Audio('10s.mp3');
+      prepSound.play();
+  
+      startPreparationTimer(prepDuration, mainDuration, display);
+    });
+  </script>
+  
+</body>
+</html>

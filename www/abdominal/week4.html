@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Days Tracker</title>
+  <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../css/jquery-1.11.1.min.js"></script>
+  <script src="../css/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../css/modal.js"></script>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 2px solid black;
+    }
+
+    #timer {
+      font-size: 24px;
+    }
+
+    .day.disabled {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      grid-gap: 10px;
+    }
+
+    .day-image {
+      width: 100%;
+      height: auto; 
+    }
+  </style>
+</head>
+<body>
+  <div data-role="page" id="daysPage" class="page">
+    <div data-role="header">
+      <a href="index.html" data-ajax="false"  data-icon="back" data-iconpos="notext">back</a>
+
+    </div>
+    <br><br><br>
+    <div role="main" class="ui-content">
+
+      <center>
+      <h2 class="title">Week 4</h2>
+
+      </center>
+      <div class="grid-container">
+        <a href="#" class="ui-btn ui-btn-inline day" id="day1">
+          <img class="day-image" src="../images/flexibility/10.png" alt="Day 1">
+          <p>
+            Execise <br> for day 1: <br>
+            Side Plank & Crunches
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day2">
+          <img class="day-image" src="../images/flexibility/8.png" alt="Day 1" >
+          <p>
+            Execise <br> for day 2: <br>
+            Toe Touches & V-Ups
+
+
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day3">
+          <img class="day-image" src="../images/flexibility/6.png" alt="Day 1" >
+          <p>
+            Execise <br> for day 3: <br>
+            Mountain Climbers & Flutter Kicks
+
+
+
+
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day4">
+          <img class="day-image" src="../images/flexibility/4.png" alt="Day 1" >
+          <p>
+            Execise <br> for day 4: <br>
+            Leg Raises & Russian Twists
+
+
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day5">
+          <img class="day-image" src="../images/flexibility/2.png" alt="Day 1" >
+          <p>
+            Execise <br> for day 5: <br>
+            Plank & Bicycle Crunches
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day6">
+          <img class="day-image" src="../images/flexibility/1.png" alt="Day 1" >
+          <p>
+            Execise <br> for day 6: <br>
+            Crunches & Plank
+          </p>
+        </a>
+        <a href="#" class="ui-btn ui-btn-inline day" id="day7">
+          <img class="day-image" src="../images/flexibility/8.png" alt="Day 1" >
+          
+          <p>
+            Execise <br> for day : <br>
+            Toe Touches & V-Ups
+
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <div class="popup" id="timerPopup">
+      <p id="message"></p>
+      <p id="timer">0</p>
+    </div>
+  </div>
+
+  <audio id="audio" src="../images/alarm.wav"></audio>
+
+  <script>
+    $(document).on("pagecreate", "#daysPage", function() {
+      var completedDaysab4 = JSON.parse(localStorage.getItem('completedDaysab4')) || [];
+
+      completedDaysab4.forEach(function(day) {
+        $('#' + day).addClass('disabled');
+      });
+
+      $('.day').on('click', function() {
+        var dayId = $(this).attr('id');
+
+        if (!completedDaysab4.includes(dayId)) {
+          Swal.fire({
+            title: 'Exercise will start',
+            text: 'Get ready!',
+            icon: 'info',
+            showConfirmButton: false,
+            timer: 2000
+          }).then(() => {
+            startTimer(dayId);
+          });
+        }
+      });
+
+      function startTimer(dayId) {
+        var totalSeconds = getDuration(dayId);
+        var halfSeconds = Math.floor(totalSeconds / 2);
+        var breakSeconds = 30;
+
+        $('#timerPopup').show();
+
+        Swal.fire({
+          title: 'Exercise 1 is starting',
+          icon: 'info',
+          showConfirmButton: false,
+          timer: 2000
+        }).then(() => {
+          var countdown = setInterval(function() {
+            halfSeconds--;
+            $('#timer').text(halfSeconds);
+
+            if (halfSeconds <= 0) {
+              clearInterval(countdown);
+              Swal.fire({
+                title: 'Rest period',
+                icon: 'info',
+                showConfirmButton: false,
+                timer: breakSeconds * 1000
+              }).then(() => {
+                Swal.fire({
+                  title: 'Exercise 2 is starting',
+                  icon: 'info',
+                  showConfirmButton: false,
+                  timer: 2000
+                }).then(() => {
+                  var secondHalfSeconds = Math.ceil(totalSeconds / 2);
+                  var secondCountdown = setInterval(function() {
+                    secondHalfSeconds--;
+                    $('#timer').text(secondHalfSeconds);
+
+                    if (secondHalfSeconds <= 0) {
+                      clearInterval(secondCountdown);
+                      completedDaysab4.push(dayId);
+                      localStorage.setItem('completedDaysab4', JSON.stringify(completedDaysab4));
+                      $('#' + dayId).addClass('disabled');
+                      $('#timerPopup').hide();
+                      Swal.fire({
+                        icon: 'success',
+                        title: 'Well done!',
+                        text: 'You have completed the exercise for Day ' + dayId.substring(3) + '.',
+                        confirmButtonText: 'OK'
+                      });
+                      var audio = document.getElementById('audio');
+                      audio.play();
+                    }
+                  }, 1000);
+                });
+              });
+            }
+          }, 1000);
+        });
+      }
+
+      function getDuration(dayId) {
+        switch (dayId) {
+          case 'day1':
+            return 60; 
+          case 'day2':
+            return 120; 
+          case 'day3':
+            return 180; 
+          case 'day4':
+            return 240; 
+          case 'day5':
+            return 300; 
+          case 'day6':
+            return 360; 
+          case 'day7':
+            return 420; 
+          default:
+            return 0;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

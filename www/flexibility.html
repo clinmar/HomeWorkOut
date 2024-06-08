@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="css/jquery-1.11.1.min.js"></script>
+  <script src="css/jquery.mobile-1.4.5.min.js"></script>
+  <script src="css/modal.js"></script>
+  <style>
+  .timer {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 48px;
+     color: #030303 !important;
+     background-color: #90ee90;
+     border-radius: 10px;
+     padding: 20px 40px;
+     text-align: center;
+     width: 200px;
+     margin: 20px auto;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   }
+
+    .timer {
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 48px;
+     color: #030303 !important;
+     background-color: #90ee90;
+     border-radius: 10px; 
+     padding: 20px 40px;
+     text-align: center;
+     width: 200px;
+     margin: 20px auto;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   }
+
+    .start-timer:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div data-role="page" id="page-main" class="page">
+    <div data-role="header" class="header">
+        <a href="index1.html" data-ajax="false"  data-icon="back" data-iconpos="notext">back</a>
+      </div>
+      <br><br>
+    <div data-role="content" class="ui-content">
+        <center>
+        <h1>Flexibility/stretching </h1>
+        </center>
+
+
+      <div class="image-grid">
+        <!-- Image 1 -->
+        <div class="image-item">
+          <img src="images/flexibility/1.png" alt="Image 1" width="100%">
+          <div class="image-text">Neck Stretch</div>
+          <a href="#modal-step1" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 2 -->
+        <div class="image-item">
+          <img src="images/flexibility/2.png" alt="Image 2" width="100%">
+          <div class="image-text">Shoulder Stretch</div>
+          <a href="#modal-step2" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 3 -->
+        <div class="image-item">
+          <img src="images/flexibility/3.png" alt="Image 3" width="100%">
+          <div class="image-text">Triceps Stretch</div>
+          <a href="#modal-step3" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- Image 4 -->
+        <div class="image-item">
+          <img src="images/flexibility/4.png" alt="Image 4" width="100%">   
+          <div class="image-text">Chest Stretch</div>
+          <a href="#modal-step4" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/flexibility/5.png" alt="Image 4" width="100%">   
+            <div class="image-text">Upper Back Stretch</div>
+            <a href="#modal-step5" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/flexibility/6.png" alt="Image 4" width="100%">   
+            <div class="image-text">Hamstring Stretch</div>
+            <a href="#modal-step6" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/flexibility/7.png" alt="Image 4" width="100%">   
+            <div class="image-text">Quadriceps Stretch</div>
+            <a href="#modal-step7" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/flexibility/8.png" alt="Image 4" width="100%">   
+            <div class="image-text">Calf Stretch</div>
+            <a href="#modal-step8" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <div class="image-item">
+            <img src="images/flexibility/9.png" alt="Image 4" width="100%">   
+            <div class="image-text">Hip Flexor Stretch:</div>
+            <a href="#modal-step9" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+        <!-- <div class="image-item">
+            <img src="images/flexibility/10.png" alt="Image 4" width="100%">   
+            <div class="image-text">Hip Flexor Stretch:</div>
+            <a href="#modal-step10" class="ui-btn view-step-btn" data-rel="popup">View step</a>
+        </div>
+         -->
+
+
+
+      </div>
+    </div>
+
+    <!-- Modal for Step 1 -->
+    <div data-role="popup" id="modal-step1" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3> Neck Stretch</h3>
+       <p>
+        <br>* Sit or stand tall with your shoulders relaxed.
+        <br>* Tilt your head to the right, bringing your right ear towards your right shoulder.
+        <br>*  Hold for 30 seconds.
+        <br>*  Repeat on the left side.
+       </p>
+       <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 2 -->
+    <div data-role="popup" id="modal-step2" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Shoulder Stretch</h3>
+        <p>
+            <br>* Extend your right arm across your chest.
+            <br>*  Use your left hand to gently press your right arm towards your chest.
+            <br>*  Hold for 30 seconds.
+            <br>*  Repeat on the left side.
+           </p>
+           <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 3 -->
+    <div data-role="popup" id="modal-step3" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3> Triceps Stretch</h3>
+      <p>
+       <br> * Reach your right arm overhead and bend it, bringing your right hand towards the middle of your back.
+       <br> * Use your left hand to gently push your right elbow further down.
+       <br> *  Hold for 15-30 seconds.
+       <br> * Repeat on the left side.
+      </p>
+        <div class="timer">30</div>
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 4 -->
+    <div data-role="popup" id="modal-step4" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Chest Stretch</h3>
+        <p>
+           <br> * Clasp your hands behind your back and straighten your arms.
+           <br> * Lift your arms slightly and squeeze your shoulder blades together.
+           <br> * Hold for 30 seconds.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+
+    <!-- 5 modal -->
+
+
+    <div data-role="popup" id="modal-step5" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Upper Back Stretch</h3>
+        <p>
+           <br> * Sit or stand tall with your arms extended in front of you.
+           <br> *Round your upper back, bringing your shoulder blades apart.
+           <br> * Hold for 30 seconds.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div data-role="popup" id="modal-step6" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Hamstring Stretch</h3>
+        <p>
+            <br> * Sit on the floor with one leg extended straight and the other leg bent.
+            <br> *  Lean forward from your hips, reaching towards your toes on the extended leg.
+            <br> *  Hold for 30 seconds.
+            <br> * Repeat on the other leg.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div data-role="popup" id="modal-step7" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Quadriceps Stretch</h3>
+        <p>
+            <br>Stand tall and hold onto a wall or chair for balance.
+            <br>Bend one knee and grab your ankle or foot with the same-side hand.
+            <br>Gently pull your heel towards your buttocks until you feel a stretch in the front of your thigh.
+            <br>Hold for 15-30 seconds.
+            <br> Repeat on the other leg.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+      <!-- 8 -->
+      <div data-role="popup" id="modal-step8" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Calf Stretch:</h3>
+        <p>
+            <br> Stand facing a wall with one foot in front of the other.
+            <br>  Lean forward, keeping your back leg straight and your heel on the ground.
+            <br>  Hold for 15-30 seconds.
+            <br>  Repeat with the other leg.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+    <div data-role="popup" id="modal-step9" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Hip Flexor Stretch</h3>
+        <p>
+            <br>    Kneel on one knee with the other foot in front, bent at a 90-degree angle.
+            <br>   Lean forward slightly, keeping your back straight, until you feel a stretch in the front of your hip.
+            <br>  Hold for 30 seconds.
+            <br>  Repeat on the other side.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+
+
+    <div data-role="popup" id="modal-step10" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+      <div class="modal-content">
+        <br><br>
+        <h3>Seated Forward Bend</h3>
+        <p>
+         <br>   Sit on the floor with your legs extended in front of you.
+         <br>   Reach forward towards your toes, keeping your back straight.
+         <br>   Hold for 15-30 seconds, breathing deeply.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Start Timer</button>
+      </div>
+    </div>
+
+
+
+
+    <a href="flexibilityweek/index.html" class="ui-btn week" data-ajax="false">4 week </a>
+
+    <div data-role="footer" data-position="fixed" class="footer">
+    </div>
+  </div>
+  <div class="timer">00:30</div>
+  <button class="start-timer">Start Timer</button>
+  
+  <script>
+    $(document).on("click", ".view-step-btn", function() {
+      $(".ui-popup-active").popup("close");
+    });
+  
+    function startMainTimer(duration, display) {
+      var timer = duration, minutes, seconds;
+      var intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+  
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+        display.text(minutes + ":" + seconds);
+  
+        if (--timer < 0) {
+          clearInterval(intervalId);
+          Swal.fire({
+            title: 'Time\'s up!',
+            text: 'The time for this stretch is over.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            onClose: () => {
+              display.text("00:30");
+            }
+          });
+          var audio = new Audio('images/alarm.wav');
+          audio.play();
+        }
+      }, 1000);
+    }
+  
+    function startPreparationTimer(prepDuration, mainDuration, display) {
+      var timer = prepDuration, seconds;
+      var audio = new Audio('images/preparation_sound.wav');
+      audio.play();
+      display.text("Please prepare for exercise");
+  
+      var intervalId = setInterval(function () {
+        seconds = parseInt(timer % 60, 10);
+  
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+        display.text("00:" + seconds);
+  
+        if (--timer < 0) {
+          clearInterval(intervalId);
+          display.text("Exercise is starting");
+  
+          var startSound = new Audio('start.mp3'); 
+          startSound.play();
+  
+          setTimeout(function() {
+            startMainTimer(mainDuration, display);
+          }, 1000); 
+        }
+      }, 1000);
+    }
+  
+    $(document).on("click", ".start-timer", function() {
+      var prepDuration = 10,
+          mainDuration = 30, 
+          display = $(this).prev('.timer');
+  
+      var prepSound = new Audio('10s.mp3');
+      prepSound.play();
+  
+      startPreparationTimer(prepDuration, mainDuration, display);
+    });
+  </script>
+  
+</body>
+</html>

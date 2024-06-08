@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="css/jquery-1.11.1.min.js"></script>
+  <script src="css/jquery.mobile-1.4.5.min.js"></script>
+  <script src="../css/modal.js"></script>
+
+</head>
+<style>
+
+
+
+   .timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+    color: #030303 !important;
+    background-color: #90ee90;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+   .start-timer:hover {
+     background-color: #0056b3;
+   }
+ </style>
+<body>
+  <div data-role="page" id="page-main" class="page">
+    <div data-role="header" class="header">
+        <a href="index.html" data-ajax="false"  data-icon="back" data-iconpos="notext">back</a>
+      </div>
+      <br><br>
+    <div data-role="content" class="ui-content">
+        <center>
+        <h1>Vascular </h1>
+        </center>
+
+
+      <div class="image-grid">
+        <!-- Image 1 -->
+        <div class="image-item">
+          <img src="images/vascular/1.png" alt="Image 1" width="100%">
+          <div class="image-text">Arm Circles</div>
+          <a href="#modal-step1" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <!-- Image 2 -->
+        <div class="image-item">
+          <img src="images/vascular/2.png" alt="Image 2" width="100%">
+          <div class="image-text">Leg Lifts</div>
+          <a href="#modal-step2" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <!-- Image 3 -->
+        <div class="image-item">
+          <img src="images/vascular/3.png" alt="Image 3" width="100%">
+          <div class="image-text">Ankle Flexes</div>
+          <a href="#modal-step3" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <!-- Image 4 -->
+        <div class="image-item">
+          <img src="images/vascular/4.png" alt="Image 4" width="100%">   
+          <div class="image-text">Toe Taps:</div>
+          <a href="#modal-step4" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/5.png" alt="Image 4" width="100%">   
+            <div class="image-text">Shoulder Rolls</div>
+            <a href="#modal-step5" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/6.png" alt="Image 4" width="100%">   
+            <div class="image-text">Calf Raises</div>
+            <a href="#modal-step6" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/7.png" alt="Image 4" width="100%">   
+            <div class="image-text">Wrist Flexes</div>
+            <a href="#modal-step7" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/8.png" alt="Image 4" width="100%">   
+            <div class="image-text">Knee Lifts</div>
+            <a href="#modal-step8" class="ui-btn view-step-btn" data-rel="popup">Tingnan </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/9.png" alt="Image 4" width="100%">   
+            <div class="image-text">Side Bends</div>
+            <a href="#modal-step9" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        <div class="image-item">
+            <img src="images/vascular/10.png" alt="Image 4" width="100%">   
+            <div class="image-text">Hip Circles</div>
+            <a href="#modal-step10" class="ui-btn view-step-btn" data-rel="popup">Tingnan  </a>
+        </div>
+        
+
+
+
+      </div>
+    </div>
+
+    <!-- Modal for Step 1 -->
+    <div data-role="popup" id="modal-step1" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+          <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+
+          </div>
+          <br><br>
+      <div class="modal-content">
+        <h3> Arm Circles</h3>
+       <p>
+        Tumayo nang magkalayo ang iyong mga paa sa lapad ng balikat at iunat ang iyong mga braso nang diretso sa mga gilid. I-rotate ang iyong mga braso sa maliliit na bilog, unti-unting pinalaki ang laki ng mga bilog. Gawin ito sa loob ng 30 segundo.
+       </p>
+       <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 2 s-->
+    <div data-role="popup" id="modal-step2" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Leg Lifts</h3>
+        <p>
+          Umupo sa gilid ng isang upuan na nakalapat ang iyong mga paa sa lupa. Iangat ang isang paa mula sa lupa, iunat ito nang diretso sa harap mo. Humawak ng ilang segundo, pagkatapos ay ibaba ito pabalik. Ulitin sa kabilang binti. Layunin ng 3osecond sa bawat binti.           </p>
+           <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 3 -->
+    <div data-role="popup" id="modal-step3" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3> Ankle Flexes</h3>
+      <p>
+        Umupo sa isang upuan na nakalapat ang iyong mga paa sa lupa. Iangat ang isang paa mula sa lupa at ibaluktot ang iyong bukung-bukong, itinuro ang iyong mga daliri sa itaas patungo sa kisame. Maghintay ng ilang segundo, pagkatapos ay magpahinga. Ulitin sa kabilang paa. Gumawa ng 10-15 repetitions sa bawat paa.
+
+      </p>
+        <div class="timer">30</div>
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <!-- Modal for Step 4 -->
+    <div data-role="popup" id="modal-step4" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Toe Taps</h3>
+        <p>
+          Umupo sa isang upuan na nakalapat ang iyong mga paa sa lupa. Iangat ang isang paa mula sa lupa at i-tap ang iyong mga daliri sa sahig sa harap mo. Ulitin sa kabilang paa. Layunin ng 10-15 taps sa bawat paa.
+
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+
+    <!-- 5 modal -->
+
+
+    <div data-role="popup" id="modal-step5" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Shoulder Rolls:</h3>
+        <p>
+          Tumayo nang mataas habang ang iyong mga braso ay nakakarelaks sa iyong mga tagiliran. I-roll ang iyong mga balikat pasulong sa isang pabilog na paggalaw, pagkatapos ay baligtarin ang direksyon at igulong ang mga ito pabalik. Gawin ito sa loob ng 30 segundo hanggang 1 minuto.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div data-role="popup" id="modal-step6" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Calf Raises</h3>
+        <p>
+          Tumayo nang magkahiwalay ang iyong mga paa sa lapad ng balakang at itaas ang mga bola ng iyong mga paa, itinaas ang iyong mga takong mula sa lupa. Humawak saglit, pagkatapos ay ibaba ang iyong mga takong pabalik. Layunin ng 10-15 na pag-uulit.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div data-role="popup" id="modal-step7" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Wrist Flexes</h3>
+        <p>
+          Iunat ang iyong mga braso sa harap mo nang nakaharap pababa ang iyong mga palad. Ibaluktot ang iyong mga pulso pataas, itinuro ang iyong mga daliri patungo sa kisame. Maghintay ng ilang segundo, pagkatapos ay magpahinga. Ulitin ng 10-15 beses.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+      <!-- 8 -->
+      <div data-role="popup" id="modal-step8" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Knee Lifts</h3>
+        <p>
+          Tumayo nang mataas nang magkahiwalay ang iyong mga paa sa balakang. Itaas ang isang tuhod patungo sa iyong dibdib, pagkatapos ay ibaba ito pabalik. Ulitin sa kabilang panig. Maghangad ng 10-15 lift sa bawat panig.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+    <div data-role="popup" id="modal-step9" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Side Bends:</h3>
+        <p>
+          Tumayo nang magkalayo ang iyong mga paa sa lapad ng balikat at magkatabi ang mga braso. Dahan-dahang sumandal sa isang gilid, i-slide ang iyong kamay pababa sa iyong binti patungo sa iyong tuhod. Maghintay ng ilang segundo, pagkatapos ay bumalik sa panimulang posisyon. Ulitin sa kabilang panig. Maghangad ng 10-15 baluktot sa bawat panig.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+
+
+
+    <div data-role="popup" id="modal-step10" class="ui-content" data-overlay-theme="b">
+        <div data-role="header" class="header">
+            <a href="#" data-rel="back" data-icon="back" data-iconpos="notext">back</a>
+          </div>
+          <br><br>
+
+      <div class="modal-content">
+        <h3>Hip Circles</h3>
+        <p>
+          Tumayo nang magkahiwalay ang iyong mga paa sa balakang at ang mga kamay ay nasa iyong mga balakang. Bilugan ang iyong mga balakang nang pakanan, pagkatapos ay baligtarin ang direksyon at bilugan ang mga ito nang pakaliwa. Gawin ito sa loob ng 30 segundo.
+        </p>
+        <div class="timer">00:30</div>
+
+        <button class="start-timer">Simulan ang Timer</button>
+      </div>
+    </div>
+    <a href="vascularweek/index.html" class="ui-btn week" data-ajax="false">4 week </a>
+
+
+
+
+
+    <div data-role="footer" data-position="fixed" class="footer">
+    </div>
+  </div>
+  <script>
+    // Add click event listener to view step buttons
+    $(document).on("click", ".view-step-btn", function() {
+      // Close any previously opened pop-ups
+      $(".ui-popup-active").popup("close");
+    });
+  
+    // Timer function
+    function startTimer(duration, display, modal) {
+      var timer = duration, minutes, seconds;
+      var intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+  
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+  
+        display.text(minutes + ":" + seconds);
+  
+        if (--timer < 0) {
+          clearInterval(intervalId);
+          Swal.fire({
+            title: 'Time\'s up!',
+            text: 'The time for this stretch is over.',
+            icon: 'warning',
+            confirmButtonText: 'OK',
+            onClose: () => {
+              // Reset the timer
+              display.text("00:30");
+            }
+          });
+          var audio = new Audio('images/alarm.wav');
+          audio.play();
+        }
+      }, 1000);
+    }
+  
+    $(document).on("click", ".start-timer", function() {
+      var duration = 30, // 30 seconds
+          display = $(this).prev('.timer');
+      startTimer(duration, display);
+    });
+  </script>
+  
+</body>
+</html>

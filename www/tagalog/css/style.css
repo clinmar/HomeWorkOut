@@ -1,0 +1,80 @@
+.page {
+  background-color: #90ee90 !important;
+}
+.menu {
+  background-color: #90ee90 !important;
+} 
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 10px; 
+}
+.sidebar {
+background-color: #90ee90 !important;
+
+}
+
+.view-step-btn {
+background-color: #adf165 !important;
+border: 2px solid black !important;
+font-weight: 900 !important;
+}
+
+.title {
+background-color: #adf165 !important;
+margin: 30px !important;
+padding: 20px !important;
+border: 0.5px solid black !important;
+border-radius: 12px !important;
+}
+
+.image-item {
+  position: relative; 
+  width: 100%; 
+}
+
+.image-text {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+}
+.alarm-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+.day p {
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.week {
+  margin: 20px !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, button {
+color: black !important;
+text-shadow: 0px 0px 0px #000000 !important;
+}.week {
+  background-color: #adf165 !important;
+  border: 2px solid black !important;
+  font-weight: 900 !important;
+}
+
+.start-timer{
+
+  background-color: #adf165 !important;
+  border: 2px solid black !important;
+  font-weight: 900 !important;
+}
+
+#submit-answer{
+  background-color: #adf165 !important;
+  border: 2px solid black !important;
+  font-weight: 900 !important;
+}

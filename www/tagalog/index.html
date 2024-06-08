@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="css/jquery-1.11.1.min.js"></script>
+    <script src="css/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="page-main" class="page">
+      <div data-role="header" class="header">
+        <a
+          href="#sidebar"
+          data-icon="bars"
+          data-iconpos="notext"
+          class="ui-btn-left menu"
+          >Menu</a
+        >
+      </div>
+      <div data-role="content" class="ui-content">
+        <div class="image-container">
+          <br>
+          <br>
+          <center>
+            <h1>WORKOUT SA BAHAY</h1>
+            <div class="image-button-container">
+              <a href="flexibility.html" data-ajax="false">
+                <img
+                  src="images/flexibility.png"
+                  alt="Image 1"
+                  style="max-width: 50%"
+                />
+              </a>
+            </div>
+          </center>
+        </div>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <div class="image-button-container">
+              <a href="vascular.html" data-ajax="false">
+                <img
+                  src="images/vascular.png"
+                  alt="Image 1"
+                  style="max-width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="ui-block-b">
+            <div class="image-button-container">
+              <a href="abdominal.html" data-ajax="false">
+                <img
+                  src="images/abdominal.png"
+                  alt="Image 2"
+                  style="max-width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="ui-block-a">
+            <div class="image-button-container">
+              <a data-ajax="false" href="arms.html">
+                <img
+                  src="images/bidep.png"
+                  alt="Image 3"
+                  style="max-width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="ui-block-b">
+            <div class="image-button-container">
+              <a href="leg.html" data-ajax="false">
+                <img
+                  src="images/tricep.png"
+                  alt="Image 4"
+                  style="max-width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- /content -->
+
+      <div
+        data-role="panel"
+        id="sidebar"
+        data-position="left"
+        data-display="overlay"
+        data-theme="a"
+        class="sidebar"
+      >
+          <center>
+           
+          </center>
+          <a class="ui-btn view-step-btn" href="#" data-rel="close">Isara</a>
+          <a class="ui-btn view-step-btn" data-ajax="false" href="about.html">Tungkol sa</a>
+         <a class="ui-btn view-step-btn" data-ajax="false" href="quiz/index.html">Pagsusulit</a>
+         <a class="ui-btn view-step-btn" data-ajax="false" href="Language/index.html">Wika</a>
+
+        <a  class="ui-btn view-step-btn" href="../exit.html" data-ajax="false">Exit</a>
+      </div>
+      <!-- /panel -->
+      <div data-role="footer" data-position="fixed" class="footer">
+      </div>
+    </div>
+ 
+  </body>
+</html>

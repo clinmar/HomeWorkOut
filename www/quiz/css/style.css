@@ -1,0 +1,40 @@
+.page {
+    background-color: #8fff1a !important;
+}
+.menu {
+    background-color: #8fff1a !important;
+} 
+ .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
+  }
+.sidebar {
+  background-color: #8fff1a !important;
+
+}
+.ui-btn {
+  background-color: #adf165 !important;
+  border: 2px solid black !important;
+  font-weight: 900 !important;
+
+}
+  .image-item {
+    position: relative; 
+    width: 100%; 
+  }
+
+  .image-text {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    text-align: center;
+  }
+  .alarm-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }

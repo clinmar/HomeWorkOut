@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>PhoneGap</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!-- Make sure to include the latest version of Cordova/PhoneGap -->
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    function onLoad() {
+      document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    function onDeviceReady() {
+      // Device is ready, you can perform any necessary initialization here
+    }
+
+    function exitFromApp() {
+      try {
+        navigator.app.exitApp();
+      } catch (e) {
+        console.log("Error exiting app: " + e.message);
+        // Fallback method to close the current window if exitApp fails
+        window.close();
+      }
+    }
+  </script>
+</head>
+<body onload="onLoad();" class="page">
+  <div data-role="page">
+    <div data-role="header">
+    </div>
+    <div role="main" class="ui-content">
+      <p>Are you sure you want to exit the app?</p>
+      <a href="#" class="ui-btn ui-corner-all btn-custom" onclick="exitFromApp()">Yes</a>
+      <a href="index1.html" class="ui-btn ui-corner-all btn-custom">No</a>
+    </div>
+  </div>
+</body>
+</html>
